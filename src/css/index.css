@@ -150,8 +150,8 @@ html {
   /* min-width: 38rem; */
 
   &::-webkit-scrollbar {
-    height: 0.5em;
-    width: 0.8em;
+    height: 0em;
+    width: 0em;
     display: none;
   }
   &::-webkit-scrollbar-track {
@@ -171,23 +171,23 @@ html {
 html {
   /* background-color: #122a35; */
   padding: 0 !important;
-  margin: 0;
+  margin:0  !important;
   font-size: 16px;
 }
 body {
   background: var(--main-bg);
-  padding: 0;
-  margin: 0;
+  padding: 0  !important;;
+  margin: 0  !important;;
 }
 
 header {
-  padding: 2em;
+  /* padding: 2em; */
   font-weight: 800;
   background-color: #FCFFFA;
   background-color: var(--dark-bg);
   
   box-shadow: 2px 1px 4px #748369;
-  width: 100%;
+  width: 100vw;
 
   & #tunnel {
     & span {
@@ -229,7 +229,7 @@ a {
   top: -180px;
 
   left: 0;
-  width: 100%;
+width: 100vw;
  height: 200px;
 
 
@@ -340,12 +340,13 @@ img:hover,
 .flexSon {
   overflow: hidden;
   position: relative;
-  -webkit-border-radius: ;
-  -moz-border-radius: ;
-  -ms-border-radius: ;
-  -o-border-radius: ;
-  border-radius: 0.4em;
+  /*border-radius: 0.4em;
+  */border-radius: .4em ;
   background-color: rgb(252, 255, 250);
+  -webkit-border-radius: .4em ;
+  -moz-border-radius: .4em ;
+  -ms-border-radius: .4em ;
+  -o-border-radius: .4em ;
 }
 
 .flexSon figure:hover::before {
@@ -647,4 +648,9 @@ img{
 .authors p span {
   white-space:nowrap !important;
 
+}
+
+
+*{
+  /* border: #e13939 solid 1px; */
 }
